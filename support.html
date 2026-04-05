@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiPods — Support</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; background: #0f0f1a; color: rgba(255,255,255,0.85); line-height: 1.7; }
+        .container { max-width: 640px; margin: 0 auto; padding: 60px 20px; }
+        h1 { font-size: 32px; margin-bottom: 8px; color: #fff; }
+        .subtitle { color: rgba(255,255,255,0.5); margin-bottom: 32px; }
+        h2 { font-size: 20px; margin: 28px 0 12px; color: #fff; }
+        p { margin-bottom: 16px; font-size: 16px; }
+        a { color: #4a8aff; }
+        .faq { background: rgba(255,255,255,0.05); border-radius: 12px; padding: 20px; margin-bottom: 16px; }
+        .faq strong { color: #fff; display: block; margin-bottom: 6px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Support</h1>
+        <p class="subtitle">Need help with MultiPods? Check the FAQ below or reach out.</p>
+
+        <h2>FAQ</h2>
+
+        <div class="faq">
+            <strong>How do I connect a friend's AirPods?</strong>
+            Have your friend put their AirPods in the case, keep the lid open, and hold the button on the back until the light flashes white. Then go to your Mac's Bluetooth settings and connect them.
+        </div>
+
+        <div class="faq">
+            <strong>How many devices can I share audio with?</strong>
+            macOS reliably supports 3–4 simultaneous Bluetooth audio devices. Performance may vary with more.
+        </div>
+
+        <div class="faq">
+            <strong>Why is there a slight delay between devices?</strong>
+            Bluetooth audio has 80–220ms latency. This is fine for music and video, but may be noticeable in real-time applications.
+        </div>
+
+        <div class="faq">
+            <strong>My audio stopped when I removed an AirPod</strong>
+            AirPods have automatic ear detection — removing one triggers a disconnect. MultiPods detects this and will either rebuild the audio sharing with remaining devices or stop sharing if fewer than 2 devices remain.
+        </div>
+
+        <div class="faq">
+            <strong>The app icon disappeared from my menu bar</strong>
+            Make sure MultiPods is running. Enable "Launch at Login" in the app's footer to ensure it starts automatically.
+        </div>
+
+        <div class="faq">
+            <strong>Audio didn't restore after stopping sharing</strong>
+            MultiPods saves your original output device and restores it when you stop sharing. If your original device disconnected in the meantime, it falls back to your Mac's built-in speakers.
+        </div>
+
+        <h2>Contact</h2>
+        <p>For bugs, feature requests, or other questions, please <a href="https://github.com/owenisas/multipods-site/issues">open an issue on GitHub</a>.</p>
+    </div>
+</body>
+</html>
