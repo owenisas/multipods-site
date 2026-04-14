@@ -10,19 +10,67 @@
         .container { max-width: 640px; margin: 0 auto; padding: 60px 20px; }
         h1 { font-size: 32px; margin-bottom: 8px; color: #fff; }
         .subtitle { color: rgba(255,255,255,0.5); margin-bottom: 32px; }
-        h2 { font-size: 20px; margin: 28px 0 12px; color: #fff; }
+        h2 { font-size: 20px; margin: 36px 0 12px; color: #fff; }
         p { margin-bottom: 16px; font-size: 16px; }
         a { color: #4a8aff; }
         .faq { background: rgba(255,255,255,0.05); border-radius: 12px; padding: 20px; margin-bottom: 16px; }
         .faq strong { color: #fff; display: block; margin-bottom: 6px; }
+        .faq ol { margin: 8px 0 0 20px; }
+        .faq ol li { margin-bottom: 4px; }
+
+        /* Contact card */
+        .contact-card {
+            background: rgba(74,138,255,0.12);
+            border: 1px solid rgba(74,138,255,0.3);
+            border-radius: 16px;
+            padding: 28px 24px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .contact-card h2 {
+            margin: 0 0 8px;
+            font-size: 22px;
+        }
+        .contact-card .response-note {
+            color: rgba(255,255,255,0.5);
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .contact-btn {
+            display: inline-block;
+            background: #4a8aff;
+            color: #fff;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            padding: 12px 28px;
+            border-radius: 10px;
+            transition: background 0.2s;
+        }
+        .contact-btn:hover { background: #3a7aef; }
+        .contact-email {
+            margin-top: 14px;
+            font-size: 14px;
+            color: rgba(255,255,255,0.45);
+        }
+        .contact-email a { color: rgba(255,255,255,0.55); }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Support</h1>
-        <p class="subtitle">Need help with MultiPods? Check the FAQ below or reach out.</p>
+        <p class="subtitle">Need help with MultiPods? We are here to help — reach out directly or browse the FAQ below.</p>
 
-        <h2>FAQ</h2>
+        <!-- Prominent contact section for Apple App Store compliance -->
+        <div class="contact-card">
+            <h2>Contact Support</h2>
+            <p class="response-note">We typically respond within 48 hours.</p>
+            <a class="contact-btn" href="mailto:support@multipods.app">Email Us</a>
+            <p class="contact-email">support@multipods.app</p>
+        </div>
+
+        <h2>Frequently Asked Questions</h2>
 
         <div class="faq">
             <strong>How do I connect a friend's AirPods?</strong>
@@ -54,8 +102,38 @@
             MultiPods saves your original output device and restores it when you stop sharing. If your original device disconnected in the meantime, it falls back to your Mac's built-in speakers.
         </div>
 
-        <h2>Contact</h2>
-        <p>For bugs, feature requests, or other questions, please <a href="https://github.com/owenisas/multipods-site/issues">open an issue on GitHub</a>.</p>
+        <div class="faq">
+            <strong>Why does MultiPods need Bluetooth permission?</strong>
+            MultiPods uses Bluetooth access to detect the battery levels of your connected AirPods and other Bluetooth audio devices. This information is shown in the menu bar so you always know how much charge your headphones have.
+        </div>
+
+        <div class="faq">
+            <strong>Why does MultiPods appear in my menu bar only?</strong>
+            MultiPods is intentionally designed as a lightweight menu bar utility. It runs quietly in the background without a dock icon so it stays out of your way while still being instantly accessible from the menu bar whenever you need it.
+        </div>
+
+        <div class="faq">
+            <strong>How do I uninstall MultiPods?</strong>
+            <ol>
+                <li>Click the MultiPods icon in your menu bar.</li>
+                <li>Scroll to the bottom of the menu and disable <strong>Launch at Login</strong> if it is enabled.</li>
+                <li>Click <strong>Quit MultiPods</strong> to stop the app.</li>
+                <li>Open <strong>Finder</strong> and go to your <strong>Applications</strong> folder.</li>
+                <li>Drag <strong>MultiPods.app</strong> to the Trash.</li>
+                <li>Empty the Trash to complete the uninstall.</li>
+            </ol>
+        </div>
+
+        <h2>Still Need Help?</h2>
+        <p>
+            If your question is not answered above, email us at
+            <a href="mailto:support@multipods.app">support@multipods.app</a>.
+            We typically respond within 48 hours.
+        </p>
+        <p>
+            Developers and technical users can also
+            <a href="https://github.com/owenisas/multipods-site/issues">open an issue on GitHub</a>.
+        </p>
     </div>
 </body>
 </html>
